@@ -12,16 +12,16 @@ module.exports = {
   // The storage services where the verified contract be saved and read from
   storage: {
     // read option will be the "source of truth" where the contracts read from for the API requests.
-    read: RWStorageIdentifiers.SourcifyDatabase,
+    read: RWStorageIdentifiers.RepositoryV1,
     // User request will NOT fail if saving to these fail, but only log a warning
     writeOrWarn: [
-      WStorageIdentifiers.AllianceDatabase,
+      WStorageIdentifiers.RepositoryV2,
       RWStorageIdentifiers.RepositoryV1,
     ],
     // The user request will fail if saving to these fail
     writeOrErr: [
       WStorageIdentifiers.RepositoryV2,
-      RWStorageIdentifiers.SourcifyDatabase,
+      RWStorageIdentifiers.RepositoryV1,
     ],
   },
   // Legacy repository
