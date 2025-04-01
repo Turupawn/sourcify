@@ -26,6 +26,8 @@ paths:
     $ref: "server/apiv1/verification/verify/stateless/verify.stateless.paths.yaml#/paths/~1verify"
   /verify/vyper:
     $ref: "server/apiv1/verification/vyper/stateless/vyper.stateless.paths.yaml#/paths/~1verify~1vyper"
+  /verify/emojity:
+    $ref: "server/apiv1/verification/emojity/stateless/emojity.stateless.paths.yaml#/paths/~1verify~1emojity"
   /verify/etherscan:
     $ref: "server/apiv1/verification/etherscan/stateless/etherscan.stateless.paths.yaml#/paths/~1verify~1etherscan"
   /verify/solc-json:

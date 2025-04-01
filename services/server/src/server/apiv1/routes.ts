@@ -6,6 +6,7 @@ import verifyRoutes from "./verification/verify/verify.routes";
 import solcJsonRoutes from "./verification/solc-json/solc-json.routes";
 import etherscanRoutes from "./verification/etherscan/etherscan.routes";
 import vyperRoutes from "./verification/vyper/vyper.routes";
+import emojityRoutes from "./verification/emojity/emojity.routes";
 import { checksumAddresses } from "./controllers.common";
 
 const router: Router = Router();
@@ -21,5 +22,6 @@ router.use("/", verifyRoutes);
 router.use("/", solcJsonRoutes);
 router.use("/", etherscanRoutes);
 router.use("/", vyperRoutes);
+router.use("/", emojityRoutes);
 
 export default router;
